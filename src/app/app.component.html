@@ -316,6 +316,12 @@
 </div>
 
 <div class="content" role="main">
+  HELLO MY FRIEND
+  <div class="card-container">
+    <button class="card card-small" (click)="captureImage()"></button>
+    <span>Capture image</span>
+  </div>
+  <img [src]="image" *ngIf="image" [style.width]="'300px'">
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">

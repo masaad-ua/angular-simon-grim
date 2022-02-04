@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# How to Build a Native App from Angular Projects with Capacitor (https://youtu.be/V2Wn2JROUEo)
+- npm install @capacitor/camera (12.05) && npx cap sync
+- ng serve -o --host 0.0.0.0
+  + ipconfig (Windows) //ipconfig getifaddr en0 (ios) ==> get ip for capasitor.config.json ----> server: {
+           url: 'http://192.168.88.34:4200',
+           cleartext: true
+    } (21.21)
+
+# How to AUTOMATICALLY configure your Capacitor project (https://youtu.be/kYFZkmJ6rAc)
+
+
