@@ -59,7 +59,7 @@ var updateIosProject = function () { return __awaiter(void 0, void 0, void 0, fu
                 _b.sent();
                 console.log(project);
                 appTarget = (_a = project.ios) === null || _a === void 0 ? void 0 : _a.getAppTarget();
-                project.ios.setBundleId(appTarget.name, null, 'com.mayvideo.myid');
+                project.ios.setBundleId(appTarget.name, null, 'com.mayvideo.myidff');
                 project.commit();
                 return [2 /*return*/];
         }

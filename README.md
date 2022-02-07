@@ -35,5 +35,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     } (21.21)
 
 # How to AUTOMATICALLY configure your Capacitor project (https://youtu.be/kYFZkmJ6rAc)
+ - npx tsc configure/configure.ts && node configure/configure.js
+ - npx cap-config run client-a.yml -y (11.10) // https://github.com/ionic-team/capacitor-configure/blob/main/examples/basic.yml
+ - 
 
 
