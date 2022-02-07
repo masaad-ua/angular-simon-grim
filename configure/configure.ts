@@ -17,6 +17,10 @@ const updateIosProject = async () => {
   const project = new CapacitorProject(config);
   await project.load();
   console.log(project);
+
+  const appTarget = project.ios?.getAppTarget();
+  project.ios.setBundleId(appTarget.name, null, 'com.mayvideo.myid');
+  project.commit();
 };
 
 updateIosProject();

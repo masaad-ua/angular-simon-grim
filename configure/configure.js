@@ -48,15 +48,19 @@ var config = {
     }
 };
 var updateIosProject = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var project;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
+    var project, appTarget;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
             case 0:
                 project = new project_1.CapacitorProject(config);
                 return [4 /*yield*/, project.load()];
             case 1:
-                _a.sent();
+                _b.sent();
                 console.log(project);
+                appTarget = (_a = project.ios) === null || _a === void 0 ? void 0 : _a.getAppTarget();
+                project.ios.setBundleId(appTarget.name, null, 'com.mayvideo.myid');
+                project.commit();
                 return [2 /*return*/];
         }
     });
